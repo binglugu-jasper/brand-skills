@@ -34,20 +34,19 @@ If context is already clear, skip questions and get to work.
 ### Primary Palette
 | Name | Hex | Use |
 |------|-----|-----|
-| Mattress Firm Red | `#d43329` | Primary brand color — logo, CTAs, "SALE" callouts, price highlights, accents |
-| Brand Navy | `#1a2b52` | Dark backgrounds, primary text on light backgrounds, headers |
+| Mattress Firm Red | `#d63426` | Primary brand color — logo, CTAs, "SALE" callouts, price highlights, accents |
+| Brand Navy | `#1b244d` | Dark backgrounds, primary text on light backgrounds, headers |
 | White | `#ffffff` | Primary background, text on navy/dark |
 
 ### Secondary / Contextual
 | Name | Hex | Use |
 |------|-----|-----|
 | Soft Lavender | `#c8cde8` | Lifestyle/aspirational backgrounds (Memorial Day, seasonal campaigns) |
-| Warm Cream | `#f5edd8` | Co-marketing, partner brand panels, warm product backgrounds |
-| Light Gray | `#f4f4f4` | Utility/trust-bar backgrounds, icon rows, footer zones |
-| Off-White | `#fafafa` | Subtle page backgrounds |
+| Warm Gray | `#eceae8` | Co-marketing panels, warm product backgrounds, subtle section dividers |
+| Light Gray | `#f8f8f8` | Utility/trust-bar backgrounds, icon rows, footer zones |
 
 ### Hard Color Rules
-- **Red `#d43329` is for emphasis only** — CTAs, "SALE", price callouts, logo. Never use as a full-page background for body content.
+- **Red `#d63426` is for emphasis only** — CTAs, "SALE", price callouts, logo. Never use as a full-page background for body content.
 - **Navy `#1a2b52` is the dark background** — never use pure black for backgrounds
 - **White text on navy, navy text on white/light** — always high contrast
 - **Red text only on white or very light backgrounds** — never red on navy (illegible)
@@ -73,7 +72,7 @@ If context is already clear, skip questions and get to work.
 - **Price/savings amounts**: Always Black (900), largest type on the canvas — these are the hero of promotional ads.
 - **Body**: Regular (400), line-height 1.5.
 - **Legal/footnote text**: Light (300), small (`10–11px`), always present when offers appear — never omit required disclosures.
-- **"SALE" word**: Always Bold (700)+ in red `#d43329`, even mid-sentence.
+- **"SALE" word**: Always Bold (700)+ in red `#d63426`, even mid-sentence.
 - **CSS fallback**: `font-family: "Rubik", "Helvetica Neue", Arial, sans-serif`
 
 ### Weight Shift Rule
@@ -117,7 +116,7 @@ Four recurring formats observed across Mattress Firm campaigns:
 
 ### 1. Split Hero (primary format)
 Canvas split roughly 40/60: left panel is a solid color (red or navy) with headline + CTA, right panel is lifestyle photography (couple in bed, cozy bedroom scene).
-- Left panel: red `#d43329` or navy `#1a2b52`, white text, outlined CTA button
+- Left panel: red `#d63426` or navy `#1a2b52`, white text, outlined CTA button
 - Right panel: warm lifestyle photo — always bedroom/sleep context
 - Logo: top-left of left panel or bottom-left, white version
 - Used for: homepage heroes, email headers, major sale campaigns
@@ -151,7 +150,7 @@ White or cream background. Partner product photos dominate. Mattress Firm logo s
 The Mattress Firm wordmark is **"MATTRESS FIRM"** in a custom bold sans-serif, all-caps, in red.
 
 **Color variants:**
-- Red `#d43329` — on white or light backgrounds (primary)
+- Red `#d63426` — on white or light backgrounds (primary)
 - White `#ffffff` — on navy or dark backgrounds
 - Never use the logo in navy or any other color
 

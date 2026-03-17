@@ -30,3 +30,10 @@ Minimum inputs needed to write a new brand skill:
 - **Logo** (PNG or SVG)
 - **3–5 ad examples** (screenshots)
 - **Brand website URL** (to extract actual font and color tokens from CSS)
+
+## If the Website Is Cloudflare-Protected
+
+Some sites (e.g. mattressfirm.com) block direct CSS access. Fallback approach:
+1. Query the Wayback Machine: `http://archive.org/wayback/available?url=<domain>`
+2. Fetch the snapshot HTML: `http://web.archive.org/web/<timestamp>/https://<domain>/`
+3. Extract CSS file URLs from the snapshot and parse font/color tokens from the HTML inline styles
