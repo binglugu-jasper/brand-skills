@@ -9,6 +9,7 @@ Each skill encodes a brand's visual system, typography, color palette, copy voic
 | Brand | Folder | Description |
 |-------|--------|-------------|
 | Kohler | [skills/kohler-brand](skills/kohler-brand/) | Premium bath and kitchen fixtures — bold, cinematic, design-led luxury |
+| Infineon | [skills/infineon-brand](skills/infineon-brand/) | Global semiconductor manufacturer — precise, technical, teal-dominant B2B |
 
 ## Install
 
