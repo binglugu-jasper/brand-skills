@@ -115,11 +115,16 @@ Warmer, sleep-aspiration focused. Short and memorable. Used for seasonal campaig
 Four recurring formats observed across Mattress Firm campaigns:
 
 ### 1. Split Hero (primary format)
-Canvas split roughly 40/60: left panel is a solid color (red or navy) with headline + CTA, right panel is lifestyle photography (couple in bed, cozy bedroom scene).
-- Left panel: red `#d63426` or navy `#1a2b52`, white text, outlined CTA button
+Canvas split roughly 40/60: left panel is a solid color (navy or red) with headline + CTA, right panel is lifestyle photography (couple in bed, cozy bedroom scene).
+- Left panel: navy `#1b244d` (default) or red `#d63426` (see Red Panel Rule below), white text, outlined CTA button
 - Right panel: warm lifestyle photo — always bedroom/sleep context
 - Logo: top-left of left panel or bottom-left, white version
 - Used for: homepage heroes, email headers, major sale campaigns
+
+**Red Panel Rule — when to use red vs. navy for the left panel:**
+- **Use navy `#1b244d`** when the hero asset is a product shot (mattress on its own, styled on a bed frame, or in a bedroom without people). The product must not be obscured — navy keeps the panel clean and lets the product photo breathe on the right.
+- **Use red `#d63426` at ~85% opacity** only when the photo features a person or people (couple sleeping, lifestyle model in bed). The semi-transparent red overlay can sit over a person without masking the hero product. The photo must be large enough that the mattress itself is fully visible in the unobscured right zone — never apply the red overlay if it would bleed over the product.
+- **Never use red as a fully opaque left panel** when the photo is a product-only shot — the warm red clashes with mattress photography and obscures the product's own color story.
 
 ### 2. Dark Navy Banner
 Full-bleed navy background. White headline, optional product image or credit card visual inset. Used heavily for financing offers.
