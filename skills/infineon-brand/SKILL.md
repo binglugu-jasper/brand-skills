@@ -76,7 +76,7 @@ Available via Google Fonts: `https://fonts.googleapis.com/css2?family=Source+San
 | Black | 900 | Hero numbers, campaign-level statements, maximum emphasis |
 
 ### Rules
-- **Headlines**: SemiBold (600) or Black (900). Sentence case always — never all-caps for headlines.
+- **Headlines**: Regular (400) or SemiBold (600). Infineon uses **size, not weight** to create hierarchy — increase font-size rather than reaching for Black/900. Sentence case always — never all-caps for headlines.
 - **Body**: Regular (400). Line-height `1.5–1.6`. Never justify.
 - **Labels / overlines**: ExtraLight (200) or Regular (400), all-caps, wide letter-spacing (`0.15–0.25em`). Used for category tags like "IN FOCUS", "NOW AVAILABLE", "ADVANCE TRAINING".
 - **Never right-align body text.** Left-align always.
@@ -163,10 +163,10 @@ Bold teal panel (often full-bleed) with large Black-weight (900) headline. Human
 The Infineon wordmark consists of **lowercase "infineon" in blue** with a **red arc/swoosh** element above.
 
 **Usage rules:**
-- Primary logo is always on **white background** — blue wordmark + red arc
-- On teal or dark backgrounds: use **white version of the wordmark** (no blue/red — full white)
-- Never apply drop shadows, outlines, or color fills to the logo
-- Never place logo on a busy photo without a clear white or teal backing panel
+- **Never place the logo on a photo** — logo must always sit on a solid color zone (white or teal panel), never overlaid on photography
+- Primary logo on **white backgrounds**: blue wordmark (`#0066b3`) + red arc (`#ec1840`)
+- On **teal or dark backgrounds**: white version only — replace all fills with `#ffffff`
+- Never apply drop shadows, outlines, or background boxes to the logo
 - Minimum clear space: equal to the height of the lowercase "i" on all sides
 - Standard placement: **top-right** (white zone ads) or **bottom-right** (teal/dark zone ads)
 
@@ -183,3 +183,6 @@ The Infineon wordmark consists of **lowercase "infineon" in blue** with a **red 
 - **Sentence case for all headlines** — never all-caps headlines
 - **All-caps only for overline labels** — category/section markers only, small and tracked
 - **Disclaimer text is mandatory** when photography is representational — "Image for representation purpose only" in ExtraLight, bottom-right, ~10px
+- **Never use video thumbnail images** — assets with filenames containing "video", "promo-video", or similar are video poster frames and always carry a play icon baked in; always find a clean photography alternative
+- **Never use images with baked-in text** — from Infineon's CDN use only clean `_rgb` or plain photography assets; avoid any image that already contains overlaid copy, product names, or UI elements
+- **Text must never be cut off** — when using the diagonal split panel layout, apply generous left padding (min 40px) to the text zone and keep headline to 2 lines maximum; always verify content fits before finalising
