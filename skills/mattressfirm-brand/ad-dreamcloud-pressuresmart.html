@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mattress Firm — DreamCloud PressureSmart Ad</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --red:   #d63426;
+      --navy:  #1b244d;
+      --white: #ffffff;
+      --font:  "Rubik", "Helvetica Neue", Arial, sans-serif;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #d0d0d0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      font-family: var(--font);
+    }
+
+    /* ── Ad canvas: 800 × 418 (leaderboard ratio) ── */
+    .ad {
+      position: relative;
+      width: 800px;
+      height: 418px;
+      overflow: hidden;
+      display: flex;
+    }
+
+    /* ── Left panel: navy, ~42% width ── */
+    .left-panel {
+      width: 42%;
+      background: var(--navy);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 28px 32px 20px 32px;
+      flex-shrink: 0;
+    }
+
+    /* Logo: white wordmark, top-left of navy panel */
+    .logo svg {
+      height: 20px;
+      width: auto;
+    }
+
+    .copy {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    /* Sale callout: always red */
+    .sale-badge {
+      font-weight: 700;
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--red);
+    }
+
+    /* Headline: sentence case, Bold 700 */
+    h1 {
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 1.2;
+      color: var(--white);
+    }
+
+    /* DreamCloud sub-brand label */
+    .brand-label {
+      font-weight: 400;
+      font-size: 11px;
+      color: rgba(255,255,255,0.65);
+      letter-spacing: 0.04em;
+      margin-bottom: 2px;
+    }
+
+    /* Price block: savings hero — Black 900, largest element */
+    .price-block {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .was-price {
+      font-weight: 400;
+      font-size: 11px;
+      color: rgba(255,255,255,0.55);
+      text-decoration: line-through;
+    }
+
+    .now-price {
+      font-weight: 900;
+      font-size: 38px;
+      line-height: 1;
+      color: var(--white);
+    }
+
+    .save-line {
+      font-weight: 500;
+      font-size: 12px;
+      color: var(--red);
+    }
+
+    /* CTA: outlined on dark background */
+    .cta-btn {
+      display: inline-block;
+      font-weight: 700;
+      font-size: 13px;
+      color: var(--white);
+      border: 2px solid var(--white);
+      padding: 9px 22px;
+      text-decoration: none;
+      letter-spacing: 0.04em;
+      width: fit-content;
+    }
+
+    /* Footnote: Light 300, small, always present */
+    .footnote {
+      font-weight: 300;
+      font-size: 10px;
+      line-height: 1.4;
+      color: rgba(255,255,255,0.45);
+    }
+
+    /* ── Right panel: lifestyle product photo ── */
+    .right-panel {
+      flex: 1;
+      background-image: url("https://images-us-prod.cms.dynamics365commerce.ms/cms/api/cncgmclkfv/imageFileData/search?fileName=/Products/144474P_000_001.png&w=800&q=85&f=jpg");
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="ad">
+
+    <!-- Left navy panel -->
+    <div class="left-panel">
+
+      <!-- White logo: top-left of dark panel -->
+      <div class="logo">
+        <svg viewBox="0 0 650 88" xmlns="http://www.w3.org/2000/svg" aria-label="Mattress Firm">
+          <g transform="translate(0 -1)" fill="none" fill-rule="evenodd">
+            <path d="M57 1.021L40.21 34.084h-.172l-.776-33.063H12.831L0 62.495h17.566l8.438-42.361h.171l2.239 42.361h14.035l20.147-42.361h.171l-9.47 42.361h17.564L83.948 1.021zm16.23 61.473h16.027l3.937-7.298h16.67l.858 7.298h15.456l-7.943-51.088H102.78L73.23 62.494zm33.628-33.556h.144l1.718 15.31h-9.804l7.942-15.31zm23.896 33.556h15.743l7.869-37.994h14.168l2.719-13.094h-44.077L124.458 24.5h14.168zm47.803 0h15.742l7.869-37.994h14.168l2.72-13.094h-44.077L172.261 24.5h14.168z" fill="#ffffff"/>
+            <g transform="translate(212 .238)">
+              <path d="M23.661 23.334h8.515c4.079 0 5.296 2.43 5.296 4.436 0 3.077-2.434 5.724-7.657 5.724h-8.3l2.146-10.16zM.05 62.257h15.455l3.722-17.816h6.797c4.365 0 6.367 2.005 6.367 4.652 0 2.576-.788 5.722-.788 8.156 0 2.289.072 3.719.645 5.008h15.027c-1.291-3.004-.717-8.229-.717-13.022s-.644-9.157-5.295-10.447v-.142c7.37-1.218 11.948-6.655 11.948-14.096 0-10.803-7.227-13.382-16.67-13.382H10.639L.05 62.257zm50.876-.001h42.787l2.718-13.094H69.385l1.361-6.367h24.613l2.504-12.164H73.322l1.357-6.369h26.476l2.646-13.094H61.587zm95.875-35.632c.284-12.594-9.518-16.671-20.396-16.671-10.303 0-21.462 5.296-21.462 16.815 0 8.515 6.009 11.805 12.231 13.88 7.085 2.362 12.309 2.863 12.309 6.584 0 3.362-3.792 4.935-6.869 4.935-2.576 0-4.437-.142-5.792-1.285-1.29-1.29-1.934-3.007-1.934-5.797H99.646c-.641 13.024 9.947 18.389 21.68 18.389 11.094 0 23.037-5.795 23.037-18.102 0-6.084-3-10.95-11.875-14.096-5.006-1.789-12.663-2.005-12.663-5.868 0-3.362 3.432-4.149 6.08-4.149 1.791 0 3.434.286 4.579 1.145s1.859 2.145 1.79 4.22h14.527zm47.016 0c.285-12.594-9.517-16.671-20.395-16.671-10.299 0-21.461 5.296-21.461 16.815 0 8.515 6.008 11.805 12.235 13.88 7.086 2.362 12.303 2.863 12.303 6.584 0 3.362-3.787 4.935-6.868 4.935-2.574 0-4.433-.142-5.794-1.285-1.292-1.29-1.933-3.007-1.933-5.797h-15.239c-.641 13.024 9.944 18.389 21.68 18.389 11.092 0 23.039-5.795 23.039-18.102 0-6.084-3.004-10.95-11.879-14.096-5.004-1.789-12.663-2.005-12.663-5.868 0-3.362 3.434-4.149 6.083-4.149 1.788 0 3.433.286 4.58 1.145s1.86 2.145 1.791 4.22h14.521zm3.472 35.632h18.941l4.906-23.419h24.193l3.015-14.638h-24.193l1.633-7.661h28.501l3.27-15.755h-47.441zm52.519 0h18.938L281.495.783h-18.947zm56.2-46.836h10.244c4.906 0 6.37 2.927 6.37 5.337 0 3.703-2.927 6.889-9.211 6.889h-9.984l2.581-12.226zm-28.413 46.836h18.593l4.482-21.439h8.176c5.258 0 7.669 2.413 7.669 5.599 0 3.098-.954 6.885-.954 9.816 0 2.753.09 4.474.775 6.024h18.084c-1.548-3.617-.867-9.902-.867-15.668 0-5.771-.769-11.023-6.365-12.57v-.173c8.867-1.467 14.376-8.008 14.376-16.963 0-12.999-8.692-16.099-20.06-16.099h-31.168l-12.741 61.473zm62.938 0h17.564l8.437-42.36h.175l2.232 42.36h14.039l20.144-42.36h.172l-9.469 42.36h17.563L424.478.783H397.53l-16.787 33.062h-.179L379.797.783h-26.442zM195.144 73.767s53.613-6.117 120.186-7.288c66.942-1.178 94.64 4.282 94.64 4.282l-1.432 7.447s-27.247-5.299-93.075-4.143C249.274 75.23 188.273 88 188.273 88l6.871-14.233z" fill="#ffffff"/>
+            </g>
+          </g>
+        </svg>
+      </div>
+
+      <!-- Headline copy block -->
+      <div class="copy">
+        <p class="sale-badge">SALE*</p>
+        <p class="brand-label">DreamCloud</p>
+        <h1>PressureSmart™<br>Firm Mattress</h1>
+        <p style="font-weight:400;font-size:12px;color:rgba(255,255,255,0.75);line-height:1.4;">
+          Targeted support &amp; pressure relief with<br>all-night cooling comfort²
+        </p>
+      </div>
+
+      <!-- Price block: price is the hero -->
+      <div class="price-block">
+        <span class="was-price">Was $1,549.00</span>
+        <span class="now-price">$899<sup style="font-size:22px;font-weight:700;vertical-align:super;line-height:0;">.99</sup></span>
+        <span class="save-line">Save 41%*</span>
+      </div>
+
+      <!-- CTA: outlined on dark -->
+      <div style="display:flex;flex-direction:column;gap:8px;align-items:flex-start;">
+        <a class="cta-btn" href="#">Shop Now</a>
+        <p class="footnote">*On select mattresses. While supplies last. †Financing subject to credit approval.<br>²Individual results may vary.</p>
+      </div>
+
+    </div>
+
+    <!-- Right panel: product photo -->
+    <div class="right-panel"></div>
+
+  </div>
+</body>
+</html>
