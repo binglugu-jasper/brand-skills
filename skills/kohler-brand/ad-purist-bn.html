@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kohler Purist® — Vibrant Brushed Nickel</title>
+  <style>
+    /* ─── Kohler Brand: Helvetica Now Text ─── */
+    @font-face {
+      font-family: "Helvetica Now Text";
+      src: url("https://www.kohler.com/_next/static/media/HelveticaNowText-Light.6252c057.woff2") format("woff2");
+      font-weight: 300;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Helvetica Now Text";
+      src: url("https://www.kohler.com/_next/static/media/HelveticaNowText-Regular.0fac5042.woff2") format("woff2");
+      font-weight: 400;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Helvetica Now Text";
+      src: url("https://www.kohler.com/_next/static/media/HelveticaNowText-Medium.0a00dcd9.woff2") format("woff2");
+      font-weight: 500;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Helvetica Now Text";
+      src: url("https://www.kohler.com/_next/static/media/HelveticaNowText-Bold.fbe0a881.woff2") format("woff2");
+      font-weight: 700;
+      font-display: swap;
+    }
+
+    /* ─── Kohler Color Tokens ─── */
+    :root {
+      --kohler-navy:    #002e49;
+      --kohler-black:   #212121;
+      --kohler-white:   #ffffff;
+      --kohler-offwhite:#f9f9f9;
+      --gray-300:       #cdcdcd;
+      --gray-500:       #757575;
+      --font: "Helvetica Now Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #111;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      font-family: var(--font);
+    }
+
+    /* ─── Ad Canvas: 1:1 square, 800px ─── */
+    .ad {
+      position: relative;
+      width: 800px;
+      height: 800px;
+      overflow: hidden;
+      background: var(--kohler-navy);
+    }
+
+    /* ─── Background: product room image, darkened ─── */
+    .ad-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url("https://kohler.scene7.com/is/image/PAWEB/aag10055_rgb?fmt=jpg&wid=800&hei=800");
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* Dark overlay — left side heavier for text legibility */
+    .ad-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        105deg,
+        rgba(0, 0, 0, 0.72) 0%,
+        rgba(0, 0, 0, 0.52) 45%,
+        rgba(0, 0, 0, 0.18) 100%
+      );
+    }
+
+    /* ─── Content layer ─── */
+    .ad-content {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 48px;
+    }
+
+    /* Top row: empty left, logo top-right */
+    .ad-top {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+    }
+
+    .logo {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 4px;
+    }
+
+    .logo-wordmark {
+      font-family: var(--font);
+      font-weight: 700;
+      font-size: 22px;
+      letter-spacing: 0.18em;
+      color: var(--kohler-white);
+      text-transform: uppercase;
+    }
+
+    /* ─── Headline block ─── */
+    .ad-headline {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 32px;
+    }
+
+    .overline {
+      font-weight: 300;
+      font-size: 11px;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--kohler-white);
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 72px;
+      line-height: 1.0;
+      letter-spacing: -0.02em;
+      color: var(--kohler-white);
+      max-width: 520px;
+      font-weight: 300;
+    }
+
+    /* Typography rule: one weight shift — light leads, bold lands.
+       First phrase = Light 300 (setup), second phrase = Bold 700 (payoff). */
+    h1 .bold {
+      font-weight: 700;
+    }
+
+    /* ─── Bottom: product info + specs ─── */
+    .ad-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .product-info {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .product-name {
+      font-weight: 500;
+      font-size: 18px;
+      letter-spacing: 0.02em;
+      color: var(--kohler-white);
+    }
+
+    .product-sub {
+      font-weight: 300;
+      font-size: 13px;
+      letter-spacing: 0.04em;
+      color: var(--kohler-white);
+    }
+
+    .specs {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 8px;
+    }
+
+    .spec-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .spec-dot {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--kohler-white);
+      flex-shrink: 0;
+    }
+
+    .spec-text {
+      font-weight: 300;
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      color: var(--kohler-white);
+      text-align: right;
+    }
+
+    /* Thin rule above bottom section */
+    .ad-rule {
+      width: 100%;
+      height: 1px;
+      background: rgba(255,255,255,0.15);
+      margin-bottom: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div class="ad">
+
+    <!-- Background photo -->
+    <div class="ad-bg"></div>
+    <!-- Darkening overlay -->
+    <div class="ad-overlay"></div>
+
+    <!-- Content -->
+    <div class="ad-content">
+
+      <!-- Top: logo -->
+      <div class="ad-top">
+        <div class="logo">
+          <span class="logo-wordmark">KOHLER</span>
+        </div>
+      </div>
+
+      <!-- Headline -->
+      <div class="ad-headline">
+        <p class="overline">Purist® Collection</p>
+        <h1>Form holds.<br><span class="bold">Water follows.</span></h1>
+      </div>
+
+      <!-- Bottom: product + specs -->
+      <div>
+        <div class="ad-rule"></div>
+        <div class="ad-bottom">
+          <div class="product-info">
+            <span class="product-name">Purist® Widespread Faucet</span>
+            <span class="product-sub">Vibrant® Brushed Nickel &nbsp;·&nbsp; K-14406-3-BN</span>
+          </div>
+          <div class="specs">
+            <div class="spec-item">
+              <span class="spec-text">1.2 gpm water-saving flow</span>
+              <div class="spec-dot"></div>
+            </div>
+            <div class="spec-item">
+              <span class="spec-text">Low gooseneck spout</span>
+              <div class="spec-dot"></div>
+            </div>
+            <div class="spec-item">
+              <span class="spec-text">ADA certified</span>
+              <div class="spec-dot"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
